@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    (function anagram() {
+      let str1 = "silent";
+      let str2 = "entsil";
+      if (str1.length == str2.length) {
+        let string1 = str1.split('').sort().join();
+        let string2 = str2.split('').sort().join();
+        if (string1 == string2) {
+          console.log("True");
+        } else {
+          console.log("False");
+        }
+      } else {
+        console.log("Invalid Input");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <p>See the console.</p>
+</body>
+
+</html>

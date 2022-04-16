@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    (function print() {
+      var arr = [5, 4, 3, 2];
+      var i, j;
+      for (i = 0; i < arr.length; i++) {
+        var temp = 0;
+        for (j = 0; j < arr.length - i; j++) {
+          temp *= 10;
+          temp += arr[j];
+        }
+        console.log(temp);
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <p>See the console.</p>
+</body>
+
+</html>
